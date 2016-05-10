@@ -1,0 +1,9 @@
+body{
+  background-color: gray;
+}
+:global(.test){
+  background-color: red;
+}
+:local(.localtest){
+  background-color: red;
+}
