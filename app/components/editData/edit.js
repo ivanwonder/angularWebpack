@@ -2,6 +2,7 @@ import style from '../../css/bootstrap.css'
 import template from './edit.html'
 import editController from './edit.controller'
 import angular from 'angular'
+import './edit.css'
 
 class editDirective {
   constructor() {

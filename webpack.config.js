@@ -33,7 +33,7 @@ var common = {
   //  },
  },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"vendor.bundle.js"),
+    new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"common", /* filename= */"common.bundle.js"),
     new HtmlWebpackPlugin({
      template: './app/index.html',
        inject: 'body'
