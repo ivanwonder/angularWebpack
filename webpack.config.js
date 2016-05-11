@@ -14,11 +14,10 @@ const PATHS = {
 
 var common = {
   entry:{
-    app:['./app/app.js'],
-    vendor:['angular']
+    app:['./app/app.js']
   },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     publicPath: '/static/',
     path:PATHS.build,
     libraryTarget: 'umd'

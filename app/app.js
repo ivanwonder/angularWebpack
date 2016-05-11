@@ -16,7 +16,7 @@ class AppCtrl {
   }
 
   submit(data){
-    this.Item.addItem([data])
+    this.Item.addItem(data)
   }
 }
 
