@@ -1,7 +1,9 @@
 export default class editController {
-  constructor(){
+  constructor($scope,$element){
     this.id = '1'
     this.name = 'hello'
+    console.log($scope);
+    console.log($element);
   }
 
   click(){
@@ -15,3 +17,5 @@ export default class editController {
   }
 
 }
+
+editController.$inject = ['$scope','$element']
