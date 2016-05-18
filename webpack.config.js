@@ -20,6 +20,7 @@ var common = {
     filename: '[name].js',
     publicPath: '/static/',
     path:PATHS.build,
+    library:'[name]',
     libraryTarget: 'umd'
   },
   externals: {
@@ -85,6 +86,12 @@ if(TARGET === 'start' || !TARGET) {
 
 if(TARGET === 'build') {
     module.exports = merge(common, {
-
+       plugins:[
+         new webpack.optimize.UglifyJsPlugin({
+           compress: {
+             warnings: false
+           }
+         })
+       ]
     })
 }

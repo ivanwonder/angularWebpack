@@ -22,5 +22,5 @@ class AppCtrl {
 
 AppCtrl.$inject = ['Item']
 
-var myapp = angular.module("myapp",[alert,edit.name,item.name])
+var myapp = angular.module("myapp",[alert,edit,item])
 myapp.controller('infoShow',AppCtrl)

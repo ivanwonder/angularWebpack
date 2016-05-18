@@ -21,4 +21,4 @@ class editDirective {
   }
 }
 
-export default angular.module('edit',[]).directive('editData',()=>new editDirective())
+export default angular.module('edit',[]).directive('editData',()=>new editDirective()).name
